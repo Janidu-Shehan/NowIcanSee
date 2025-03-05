@@ -1,0 +1,10 @@
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore environment configuration files
+.env
+
+# Ignore any credentials files
+*.json
+*.pem
