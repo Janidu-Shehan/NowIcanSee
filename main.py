@@ -7,6 +7,7 @@ import time
 import cv2
 from google.genai import types
 from PIL import Image
+from dotenv import load_dotenv
 
 # Load the environment variables from the .env file
 load_dotenv()
