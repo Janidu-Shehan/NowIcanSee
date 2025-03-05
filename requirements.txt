@@ -1,0 +1,6 @@
+pyaudio
+wave
+google-cloud-speech
+google-generativeai
+pillow
+opencv-python
