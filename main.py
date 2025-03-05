@@ -8,6 +8,14 @@ import cv2
 from google.genai import types
 from PIL import Image
 
+# Load the environment variables from the .env file
+load_dotenv()
+
+# Get the API keys and credentials from the environment variables
+client_answer = genai.Client(api_key=os.getenv('GEMINI_API_KEY'))
+
+# Set the Google Cloud credentials
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 
 # Initialize Google Cloud Speech client
 client = speech.SpeechClient()
